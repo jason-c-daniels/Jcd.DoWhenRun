@@ -1,9 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="DefaultDocumentation" Version="0.7.9">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -12,4 +8,41 @@
     <PackageReference Include="Jcd.Validations" Version="1.1.7" />
   </ItemGroup>
 
+
+
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Jcd.DoWhenRun</Title>
+        <Authors>Jason C. Daniels</Authors>
+        <Description>A netstandard 1.0 set of extension methods, Do, DoWhen and Run, that give a `Fluent` builder-pattern-like experience to operating on `IEnumerable` and `IEnumerable&lt;T&gt;` derived types.</Description>
+        <Copyright>2021</Copyright>
+        <PackageProjectUrl>https://github.com/jason-c-daniels/Jcd.DoWhenRun</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/jason-c-daniels/Jcd.DoWhenRun/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/jason-c-daniels/Jcd.DoWhenRun</RepositoryUrl>
+        <RepositoryType>GitHub</RepositoryType>
+        <PackageVersion>0.0.1</PackageVersion>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+        <FileVersion>0.0.1</FileVersion>
+        <PackageIconUrl>https://s.gravatar.com/avatar/c7e8df18f543ea857ac93660a190df98?s=320</PackageIconUrl>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <TargetFramework>netstandard1.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>..\docs\Jcd.DoWhenRun.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>..\docs\Jcd.DoWhenRun.xml</DocumentationFile>
+    </PropertyGroup>
+
 </Project>
+

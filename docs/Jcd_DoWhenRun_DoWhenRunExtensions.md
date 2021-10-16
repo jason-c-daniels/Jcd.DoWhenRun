@@ -1,0 +1,25 @@
+### [Jcd.DoWhenRun](Jcd_DoWhenRun.md 'Jcd.DoWhenRun')
+## DoWhenRunExtensions Class
+A netstandard 1.0 set of extension methods, Do, DoWhen and Run, that give a `Fluent`  
+builder-pattern-like experience to operating on `IEnumerable` and `IEnumerable<T>`   
+derived types.  
+```csharp
+public static class DoWhenRunExtensions
+```
+
+Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; DoWhenRunExtensions  
+
+| Methods | |
+| :--- | :--- |
+| [Do(IEnumerable, Action&lt;int,object&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_Do(System_Collections_IEnumerable_System_Action_int_object_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Do(System.Collections.IEnumerable, System.Action&lt;int,object&gt;)') | Setup an action to run across the elements of a collection/enumerable.<br/> |
+| [Do(IEnumerable, Action&lt;object&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_Do(System_Collections_IEnumerable_System_Action_object_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Do(System.Collections.IEnumerable, System.Action&lt;object&gt;)') | Setup an action to run across the elements of a collection/enumerable.<br/> |
+| [Do&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;int,T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_Do_T_(System_Collections_Generic_IEnumerable_T__System_Action_int_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Do&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Action&lt;int,T&gt;)') | Setup an action to run across the elements of a collection/enumerable.<br/> |
+| [Do&lt;T&gt;(IEnumerable&lt;T&gt;, Action&lt;T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_Do_T_(System_Collections_Generic_IEnumerable_T__System_Action_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Do&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Action&lt;T&gt;)') | Setup an action to run across the elements of a collection/enumerable.<br/> |
+| [DoWhen(IEnumerable, Func&lt;int,object,bool&gt;, Action&lt;int,object&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen(System_Collections_IEnumerable_System_Func_int_object_bool__System_Action_int_object_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen(System.Collections.IEnumerable, System.Func&lt;int,object,bool&gt;, System.Action&lt;int,object&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [DoWhen(IEnumerable, Func&lt;object,bool&gt;, Action&lt;int,object&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen(System_Collections_IEnumerable_System_Func_object_bool__System_Action_int_object_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen(System.Collections.IEnumerable, System.Func&lt;object,bool&gt;, System.Action&lt;int,object&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [DoWhen(IEnumerable, Func&lt;object,bool&gt;, Action&lt;object&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen(System_Collections_IEnumerable_System_Func_object_bool__System_Action_object_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen(System.Collections.IEnumerable, System.Func&lt;object,bool&gt;, System.Action&lt;object&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [DoWhen&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;int,T,bool&gt;, Action&lt;int,T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen_T_(System_Collections_Generic_IEnumerable_T__System_Func_int_T_bool__System_Action_int_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Func&lt;int,T,bool&gt;, System.Action&lt;int,T&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [DoWhen&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T,bool&gt;, Action&lt;int,T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen_T_(System_Collections_Generic_IEnumerable_T__System_Func_T_bool__System_Action_int_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Func&lt;T,bool&gt;, System.Action&lt;int,T&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [DoWhen&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T,bool&gt;, Action&lt;T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_DoWhen_T_(System_Collections_Generic_IEnumerable_T__System_Func_T_bool__System_Action_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.DoWhen&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Func&lt;T,bool&gt;, System.Action&lt;T&gt;)') | Setup an action to conditionally run across the elements of a collection/enumerable.<br/> |
+| [Run(IEnumerable)](Jcd_DoWhenRun_DoWhenRunExtensions_Run(System_Collections_IEnumerable).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Run(System.Collections.IEnumerable)') | Forces enumeration of an enumerable. <br/> |
+| [Run&lt;T&gt;(IEnumerable&lt;T&gt;)](Jcd_DoWhenRun_DoWhenRunExtensions_Run_T_(System_Collections_Generic_IEnumerable_T_).md 'Jcd.DoWhenRun.DoWhenRunExtensions.Run&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;)') | Forces enumeration of an enumerable. <br/> |
