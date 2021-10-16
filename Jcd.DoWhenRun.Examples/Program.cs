@@ -8,7 +8,6 @@ namespace Jcd.DoWhenRun.Examples
     {
         private static void Main(string[] args)
         {
-
             // execute some code on each tuple during enumeration.
             (from x in Enumerable.Range(0, 4)
              from y in Enumerable.Range(0, 4)
@@ -31,7 +30,6 @@ namespace Jcd.DoWhenRun.Examples
                 i++;
             }
             Console.WriteLine();
-
 
             var moretuples = (from x in Enumerable.Range(0, 4)
                               from y in Enumerable.Range(0, 4)
@@ -66,7 +64,6 @@ namespace Jcd.DoWhenRun.Examples
             Console.WriteLine("Notice how the tuples were output twice. This means we've re-enumerated the collection. This is a bad thing."+
             " By injecting a visitor we can see it happen. Of Course visitors can have other functions too"+
             "\r\n\r\nWARNING: Visitors with side-effects, such as Console output, can cause unexpected behavior, as witnessed in this example, use with care!");
-
             
             AppDomain.CurrentDomain.GetAssemblies()
                 .Do(assembly =>
